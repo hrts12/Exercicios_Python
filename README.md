@@ -14,10 +14,12 @@ Este conjunto de scripts aborda exercícios e pequenos programas em Python que e
 - Implementação de cálculos matemáticos simples com descontos condicionais aplicados diretamente nas variáveis, deixando o código limpo e eficiente.
 
 ## Modularização com Funções
-- Organização do código em funções para facilitar manutenção e reutilização, com tratamento de exceções para garantir entradas válidas. - Utilização de expressões regulares para validação de padrões complexos, como a segurança de senhas.
+- Organização do código em funções para facilitar manutenção e reutilização, com tratamento de exceções para garantir entradas válidas.
+- Utilização de expressões regulares para validação de padrões complexos, como a segurança de senhas.
 
 ## Programação Orientada a Objetos (POO)
-- Criação de classes base e subclasses para organizar dados e comportamentos, promovendo reutilização e extensão de funcionalidades. - Personalização da representação dos objetos com métodos específicos.
+- Criação de classes base e subclasses para organizar dados e comportamentos, promovendo reutilização e extensão de funcionalidades.
+- Personalização da representação dos objetos com métodos específicos.
 
 ## Consumo de APIs Externas
 - Uso da biblioteca requests para realizar requisições HTTP e integrar dados externos, demonstrando conexão com serviços web.
