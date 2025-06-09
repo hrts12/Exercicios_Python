@@ -1,4 +1,4 @@
-#curso  de algoritimos em py
+#Treino progressivo de algoritimos em py
 print("inicio do curso de algoritimos")
 
 #1
