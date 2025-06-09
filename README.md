@@ -1,4 +1,6 @@
-##Descrição do Projeto##
+# Exercicios_Python
+
+## Descrição do Projeto
 Este conjunto de scripts aborda exercícios e pequenos programas em Python que exploram conceitos essenciais da programação, como controle de fluxo, manipulação de dados, estruturas condicionais, laços, funções, classes, além de manipulação básica de APIs e expressões regulares.
 
 - Técnicas e Boas Práticas Aplicadas
