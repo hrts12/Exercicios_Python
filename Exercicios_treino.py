@@ -851,3 +851,87 @@ if api.status_code == 200:
     print(data)
 else:
     print(f'Erro foi gerado {api.status_code}')
+
+#56
+while True:
+    Numeros = str(input("Digite 10 numeros inteiros abaixo:\n"))
+    lista = Numeros.split()
+    lista = [int(n) for n in lista]
+    
+    if len(lista) < 10:
+        print("Digite 10 numeros!")
+    else:
+        break
+
+numeros_pares = [num for num in lista if num % 2 == 0]
+resultado_par = sum(numeros_pares)
+
+numeros_inpares = [num for num in lista if num % 2 != 0]
+resultado_impar = sum(numeros_inpares)
+
+print(f'\nSoma dos numeros pares: {resultado_par}')
+print(f'Soma dos numeros impares: {resultado_impar}')
+
+#57
+import re
+
+def palindrome():
+    palavra = str(input("Digite uma palavra ou frase: ")).lower()
+    palavra_limpa = re.sub(r"[^a-z]", "", palavra)
+    palavra_invertida = palavra_limpa[::-1]
+
+    if palavra_limpa == palavra_invertida:
+        print("A palavra ou frase é um palindrome")
+    else:
+        print("A palavra ou frase não é um palindrome")
+
+#58
+import random
+
+def numero_random():
+    numero = random.randint(1, 100)
+    meu_chute = 0
+    tentativas = 1
+
+    while meu_chute != numero:
+        meu_chute = int(input("Tente adivinhar o numero: "))
+
+        if meu_chute == numero:
+            print(f'Voce acertou com {tentativas} tentativas')
+            break
+        elif meu_chute < numero:
+            print("Tente de novo, seu numero é menor")
+            tentativas += 1
+        else:
+            print("Tente de novo, seu numero é maior")
+            tentativas += 1
+
+#59
+notas_alunos = str(input("Digite a nota de 5 alunos abaixo:\n"))
+notas_gerais = notas_alunos.split()
+notas_gerais = [int(n) for n in notas_gerais]
+
+media = [int(sum(notas_gerais) / len(notas_gerais))]
+
+notas_aprovados = [a for a in notas_gerais if a >= media[0]]
+notas_reprovados = [b for b in notas_gerais if b < media[0]]
+
+print(f'notas dos alunos {notas_gerais}')
+print(f'media das notas {media}')
+print(f'notas acima da media {notas_aprovados}')
+print(f'notas abaixo da media {notas_reprovados}')
+print(f'alunos aprovados: {len(notas_aprovados)} \nalunos reprovados: {len(notas_reprovados)}')
+
+#60
+import re
+
+frase = str(input("digite uma frase: ")).lower()
+frase_limpa = re.sub(r"[^a-z]", "", frase)
+
+
+vogais = re.sub(r"[^aeiou]", "", frase_limpa)
+consoantes = re.sub(r"[aeiou]", "", frase_limpa)
+
+contagem_V = len(vogais)
+contagem_C = len(consoantes)
+print(f'Vogais: {contagem_V}\nConsoantes: {contagem_C}')
